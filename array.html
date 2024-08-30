@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array List</title>
+</head>
+<body>
+    
+    <script>
+        var num = parseInt(prompt("digite o número da sua inscrição"));
+        var array = [400, 14, 21, 28, 35];
+        var array2 = [3, 6, 9, 70, 50]
+        var posicao = array.indexOf(num);
+        var posicao2 = array2.indexOf(num);
+
+        if (posicao !== -1){
+            alert(`a sua posição é: `+ (posicao+1));
+        } else if (posicao2 !== -1){
+            alert(`você pode ser convocado na segunda chamada. sua posição é: ` + (posicao2+6))
+        } else {
+            alert (`você não está entre os 5 primeiros`);
+        }
+    </script>
+
+</body>
+</html>
